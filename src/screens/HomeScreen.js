@@ -32,11 +32,11 @@ export default function HomeScreen({ navigation }) {
           <Text style={styles.cardValue}>Counterfeited 32</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity style={styles.card}>
-          <Ionicons name="checkmark-circle-outline" size={40} color="#2196F3" />
-          <Text style={styles.cardTitle}>Success</Text>
-          <Text style={styles.cardValue}>Checkouts 8</Text>
-        </TouchableOpacity>
+          <TouchableOpacity style={styles.card} onPress={() => navigation.navigate('Success')}>
+            <Ionicons name="checkmark-circle-outline" size={40} color="#2196F3" />
+            <Text style={styles.cardTitle}>Success</Text>
+            <Text style={styles.cardValue}>Checkouts 8</Text>
+          </TouchableOpacity>
 
         <TouchableOpacity style={styles.card}>
           <Ionicons name="time-outline" size={40} color="#FF9800" />
